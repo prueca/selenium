@@ -91,15 +91,15 @@ class WebTest extends TestCase
 	public function setUp(): void
 	{
 		$capabilities = array(WebDriverCapabilityType::BROWSER_NAME => 'chrome');
-        $this->driver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
+        	$this->driver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
 	}
 
 	public function testBrowse()
-    {
-        $this->driver->get($this->url);
-        $input = WebDriverBy::cssSelector('input[name="q"]');
-        $this->driver->findElement($input)->sendKeys('test');
-    } 
+    	{
+        	$this->driver->get($this->url);
+        	$input = WebDriverBy::cssSelector('input[name="q"]');
+        	$this->driver->findElement($input)->sendKeys('test');
+    	} 
 }
 ```
 
