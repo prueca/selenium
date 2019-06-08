@@ -2,7 +2,7 @@
 
 Selenium automates browser.
 
-Note: With xampp, an outdated phpunit is installed by default. Follow this steps to override xampp phpunit:
+Note: With xampp, an outdated phpunit is installed by default. Follow these steps to override xampp phpunit:
 
 - Go to xampp/php folder and delete two files phpunit (with no extension) and phpunit.bat.
 - Go to xampp/php/PEAR dir and delete two folders PHPUnit and PHPUnit2.
